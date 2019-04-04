@@ -1,14 +1,43 @@
 <center>
     <h2>ID Cards</h2>
-    <form action="/id_cards" method="post">
-        <input class="datainput" type="text" name="username" placeholder="Username"><br>
-        <input class="datainput" type="text" name="card_id" placeholder="Card ID"><br>
-        <input class="datainput" type="text" name="name" placeholder="Name"><br>
-        <input class="datainput" type="text" name="surname" placeholder="Surname"><br>
-        <input class="datainput" type="text" name="fathersname" placeholder="Father's Name"><br>
-        <input class="datainput" type="date" name="birthdate" placeholder="Birthdate"><br>
-        <input class="datainput" type="submit" value="Create User">
-    </form>
+    <div class="container">
+        <div class="addidcardspanel">
+            <h3>Add ID Card</h3>
+            <form action="/id_cards" method="post">
+                <input class="datainput" type="text" name="username" placeholder="Username"><br>
+                <input class="datainput" type="text" name="card_id" placeholder="Card ID"><br>
+                <input class="datainput" type="text" name="name" placeholder="Name"><br>
+                <input class="datainput" type="text" name="surname" placeholder="Surname"><br>
+                <input class="datainput" type="text" name="fathersname" placeholder="Father's Name"><br>
+                <input class="datainput" type="date" name="birthdate" placeholder="Birthdate"><br>
+                <input class="datainputbtn" type="submit" value="Create User">
+            </form>
+        </div>
+        <div class="getidcardspanel">
+            <h3>Get ID Cards</h3>
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>Card ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Fathername</th>
+                    <th>Birthdate</th>
+                </tr>
+                {{# each id_card}}
+                    <tr>
+                        <td>{{this.username}}</td>
+                        <td>{{this.card_id}}</td>
+                        <td>{{this.name}}</td>
+                        <td>{{this.surname}}</td>
+                        <td>{{this.fathersname}}</td>
+                        <td>{{this.birthdate}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+            <a class="getidcardbtn" href="/id_cards/getid_cards">Get Users</a>
+        </div>
+    </div>
 
-    <a target="_blank" href="/id_cards/getid_cards">Get ID Cards</a>
+    <a target="_blank" href="/id_cards/getid_cards_json">Get ID Cards to JSON</a>
 </center>

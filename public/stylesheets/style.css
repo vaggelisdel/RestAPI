@@ -1,22 +1,105 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #dbdbdb;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: #dbdbdb;
 }
 
 a {
-  color: #00B7FF;
+    color: #00B7FF;
 }
-.homepage_links{
-  text-decoration: none;
-  border: 1px solid black;
-  padding: 10px 15px;
-  color: black;
-  margin: 10px;
+
+.homepage_links {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 15px;
+    color: black;
+    margin: 10px;
 }
-.datainput{
-  margin: 10px;
-  background: transparent;
-  border: 1px solid black;
-  padding: 10px;
+
+.datainput {
+    margin: 10px;
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.adduserpanel {
+    background: #c7c7c7;
+    box-shadow: 4px 5px 20px 0px #0000007a;
+    padding: 0 1.5em 1.5em 1.5em;
+    margin: 20px;
+    width: 30%;
+    height: 350px;
+    overflow: overlay;
+}
+
+.getuserspanel {
+    background: #c7c7c7;
+    box-shadow: 4px 5px 20px 0px #0000007a;
+    padding: 0 1.5em 1.5em 1.5em;
+    margin: 20px;
+    width: 70%;
+    height: 350px;
+    overflow: overlay;
+}
+
+.getidcardspanel {
+    background: #c7c7c7;
+    box-shadow: 4px 5px 20px 0px #0000007a;
+    padding: 0 1.5em 1.5em 1.5em;
+    margin: 20px;
+    width: 70%;
+    height: 500px;
+    overflow: overlay;
+}
+
+.addidcardspanel {
+    background: #c7c7c7;
+    box-shadow: 4px 5px 20px 0px #0000007a;
+    padding: 0 1.5em 1.5em 1.5em;
+    margin: 20px;
+    width: 30%;
+    height: 500px;
+    overflow: overlay;
+}
+
+.getuserbtn, .getidcardbtn {
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 1em;
+    color: white;
+    background: red;
+}
+
+.datainputbtn {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 2em;
+    background: red;
+    color: white;
+}
+
+.getuserspanel table {
+    width: 100%;
+    text-align: center;
+}
+
+.getuserspanel table td, .getuserspanel table th {
+    border: 1px solid black;
+}
+.getidcardspanel table {
+    width: 100%;
+    text-align: center;
+}
+
+.getidcardspanel table td, .getidcardspanel table th {
+    border: 1px solid black;
 }
