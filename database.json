@@ -1,0 +1,4 @@
+{
+  "db_url": "mongodb+srv://vaggelisdel:1qa2ws3ed4rf5tg@node-mywallet-dz0kz.mongodb.net/test?retryWrites=true",
+  "db_name": "mywallet"
+}
