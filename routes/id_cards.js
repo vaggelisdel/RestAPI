@@ -67,7 +67,7 @@ router.post("/", (request, response) => {
                 return response.status(500).send(error);
             }
             // response.send(result.result);
-            response.redirect("/id_cards");
+            response.redirect("/id_cards/getid_cards");
         });
     });
 });
