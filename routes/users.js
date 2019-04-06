@@ -3,8 +3,13 @@ var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require("mongodb").ObjectID;
 const database = require('../database');
+const path= require('path');
 
 const db_table = "users";
+
+// router.get('/*', function(req, res){
+//     res.redirect('/#!');
+// });
 
 MongoClient.connect(database.db_url, {useNewUrlParser: true}, function (err, client) {
     if(err) {
