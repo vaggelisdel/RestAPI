@@ -16,6 +16,6 @@
     "mongodb": "^3.2.2",
     "mongoose": "^5.4.21",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.10"
+    "nodemon": "^2.0.0"
   }
 }
